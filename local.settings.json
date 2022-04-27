@@ -1,0 +1,31 @@
+{
+  "IsEncrypted": false,
+   "ConnectionStrings": {
+    "SqlConnectionString": "Server=13.71.7.26;Initial Catalog=ConnectrixDev;Persist Security Info=False;User ID=sa;Password=sql@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;",
+    "StorageAccountConnectionString": "DefaultEndpointsProtocol=https;AccountName=connectrixstorageaccount;AccountKey=6tIiV63SAMMX2DyTz+xznFDM8buE2jiKEBm5k+Nk84grAoKgfbCRwuLBJPLzHDlUtm5A4IP4vlP9dT/vd1UA4g==;EndpointSuffix=core.windows.net"
+  },
+  "Values": {
+    "SmsSetting": "vinay.rai@uneecops.com:123456&senderID=CNCTRX",
+    "SharedMainStorageDirectory": "connectrixfileshare",
+    "SharedStorageParentDirectory": "connectrixdirectorydev",
+    "SharedStorageDirectory": "SalesInvoices",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "IssuerToken": "UNEECOPS TECHNOLOGIES LTD",
+    "Issuer": "Uneecops",
+    "ExpiryTimeInHrs": "24",
+    "ServiceExpiryTimeInHrs": "24",
+    "CompanyOtpValidityInHrs": "24",
+    "UserOtpValidityInMinutes": "15",
+    "EncryptionKey": "Uneecops",
+    "CompanyOtpTemplate": "Thanks for downloading Connectrix Sales App. To activate the app, enter OTP {otp} as your company code.",
+    "UserOtpTemplate": "Thanks for using the company code. Now, enter OTP {otp} to work with Connectrix Sales App. Have a great day ahead!!!",
+    "ForgotOtpTemplate": "Enter OTP {otp} to recover your Connectrix Sales App account.",
+    "DisabledUserTemplate": "Your Connectrix Sales App account has been disabled  for  {otp} ."
+
+  },
+  "Host": {
+    "CORS": "*"
+  }
+
+}

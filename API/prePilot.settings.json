@@ -1,0 +1,178 @@
+{
+  "Environment": "Pre Pilot",
+  "IsEncrypted": false,
+  "ConnectionStrings": {
+    "SqlConnectionString": "server=mysqldrona01.mysql.database.azure.com;Port=3309;user=azureadmin@mysqldrona01;password=rjks@2k50000;database=dronadev",
+    "StorageAccountConnectionString": "DefaultEndpointsProtocol=https;AccountName=mnkdronacommonstorage;AccountKey=59IF5BFXtiLtBUA1km3R/Y5spdXIK8yQ+J7vEjd9iUTAHao+vNm51/2BPRrluPBhPwZW/yA/vQw7Me6L6kCgLw==;EndpointSuffix=core.windows.net"
+  },
+  "Values": {
+    "SharedMainStorageDirectory": "mnkdronacommonfileshare",
+
+    "SharedStorageParentDirectory": "mnkdronacommondirectorydev",
+
+    "SharedStorageDirectory": "Images",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "SharedStorageParentImgDirectory": "mnkdronacommondirectorydev",
+
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "IssuerToken": "UNEECOPS TECHNOLOGIES LTD",
+    "Issuer": "Uneecops",
+    "ExpiryTimeInHrs": "8760",
+    "ServiceExpiryTimeInHrs": "8760",
+    "EncryptionKey": "Uneecops",
+
+    "deviceToken": "",
+    "messageHeading": "Alert",
+    "messageSubHeading": "",
+    "messageText": "You have been deactivated.",
+    "messageCategory": "LogOut",
+    "imageUrl": "",
+    "keyMessageCategory": "messageCategory",
+    "valueMessageCategory": "NotificationUserLogout"
+
+  },
+  "Host": {
+    "CORS": "*"
+  },
+  "SmsConfig": {
+    "baseUrl": "https://http.myvfirst.com/smpp/sendsms",
+    "authType": "Basic",
+    "authToken": "",
+    "username": "ramedeohtpotp",
+    "password": "7262)gsa",
+    "requestType": "param",
+    "from": "DRONAH",
+    "to": "",
+    "text": " is your OTP. OTP is valid for 15 minutes -  DrOnA",
+    "valueFirstTrnsAccount": {
+      "username": "ramedeohtptrns",
+      "password": "gdsdu(62"
+    }
+  },
+  "NotficationConfig": {
+    "BASEURL": "https://fcm.googleapis.com/fcm/send",
+
+    //New Key
+    "SERVER_API_KEY": "AAAA65lHZDA:APA91bEHatRPrPBphvHrDA3QFFnUy_J_HrVAsnEgZVLXu506yPcVhgjhPGmMKr7WQZNsEYWtwipVkdS0k4rlwJKCHcxXg-pZyDWPZ8R-VFjgVc6tH33Qz2LtwUsxLT9AR2yn9mEvvPuB",
+    "SENDER_ID": "1011888907312"
+
+  },
+  //"DoctorNotficationConfig": {
+  //  "SERVER_API_KEY": "AAAAz7SmwiA:APA91bFXu1C0aa3JD4qfBEJrhNRL-z3gOkA95532saAM5mO88kT6C6c8YxyL7mKgszWTSWVQzv3h8kWm_VJi-4S6SLrIMyeG8W7M2ntYIBj4HAAgR0uaoUl-_h94xpRGRoXuTC28FzWJ",
+  //  "SENDER_ID": "892089057824"
+  //},
+  "EmailSetting": {
+    "To": "",
+    "From": "help@dronahealth.co.in",
+    "Password": "Drona@123",
+    "SMTP": "",
+    "IsBodyHtml": "true",
+    "EnableSsl": "true",
+    "Host": "smtp.rediffmailpro.com",
+    "Port": "587",
+    "TimeOut": "120000",
+    "UseDefaultCredentials": "false"
+  },
+  "TwilioSettings": {
+    "AccountSid": "ACc042fd2b9467197ea8255c090cb195b9", // Sandeep - AC8b9e92ba7efb92dfbba97d4766d1b504 // Old - ACacef58b46db315ba835d8343a2886887 // DronaHealth - ACc042fd2b9467197ea8255c090cb195b9
+    "ApiSecret": "3kWqqn7a8fP7lBzqokq3r8YEOm3GrAVX", // Sandeep - N5w2p6HEBGcAlgnQAPQ040nfNassC3SF // Old - a1PUV7KgrG7ex9z3T5CPBRETlX8Pjszv // DronaHealth - 3kWqqn7a8fP7lBzqokq3r8YEOm3GrAVX
+    "ApiKey": "SK2d0035d86bf0090a28b96f479bffdff8", // Sandeep - SKe62cc7b4ae855414fb245eb488084ec8 (SID) // Old - SKd0c5f2193a994cc84419cf7208e9bf02 // DronaHealth - SK2d0035d86bf0090a28b96f479bffdff8 (SID)
+    "AuthToken": "cd70eb6d9eaea9ce97a6558da1c868e0", // Sandeep - 473da0b4e5066cdf28db8edaa5874549 // DronaHealth - cd70eb6d9eaea9ce97a6558da1c868e0
+    "FriendlyName": "" // Sandeep -  VideoApiKey // DronaHealth - DronaHealthVideoApiKey
+  },
+  "SharelinkSettings": {
+    "BaseUrl": "www.dronaapp.com/Production"
+  },
+  "MsiteSmsContent": {
+    "BookAppointmentInClinic": "Dear {0}, your In-clinic appointment with {1} is scheduled for {2}, {3} at {4}. Call {5} for any enquiry.- DrOnA",
+    "BookAppointmentVirtual": "Dear {0}, your payment of {1} has been received and your VIDEO-consult with {2} is confirmed for {3}, {4}. Upload previous records, and start the video call on {5}  Your invoice: {6} - DrOnA",
+    "RescheduledAppointmentInClinic": "Dear {0}, your In-clinic appointment with {1} is RE-SCHEDULED for {2}, {3} at {4}. Call {5} for any enquiry.",
+    "RescheduledAppointmentVirtual": "Dear {0}, your VIDEO consultation appointment with {1} is RE-SCHEDULED for {2}, {3}.Please pay to confirm  {4}  Ignore if already paid.",
+    "CancelAppointment": "Dear {0}, your appointment with {1} for date {2}, {3} is now cancelled. The amount (if any), shall be refunded in 5-7 working days.",
+    "PrescriptionLink": "Dear {0}, thank you for using DrOnA for your online consultation with Dr. {1}.Please use the following link to access your prescription(s): {2}  Call 91-8585855656 for any enquiry.",
+    "VedioUrl": "",
+    "InvoiceUrl": "",
+    "urlforshare": ""
+  },
+  "MsiteEmailContent": {
+    "BookAppointmentInClinic": "Dear {0}, your In-clinic appointment with {1} is scheduled for {2}, {3} at {4}. Call {5} for any enquiry.- DrOnA",
+    "BookAppointmentVirtual": "Dear {0}, your payment of {1} has been received and your VIDEO-consult with {2} is confirmed for {3}, {4}. Upload previous records, and start the video call on {5}  Your invoice: {6} - DrOnA",
+    "RescheduledAppointmentInClinic": "Dear {0}, your In-clinic appointment with {1} is RE-SCHEDULED for {2}, {3} at {4}. Call {5} for any enquiry.",
+    "RescheduledAppointmentVirtual": "Dear {0}, your VIDEO consultation appointment with {1} is RE-SCHEDULED for {2}, {3}.Please pay to confirm  {4}  Ignore if already paid.",
+    "CancelAppointment": "Dear {0}, your appointment with {1} for date {2}, {3} is now cancelled. The amount (if any), shall be refunded in 5-7 working days.",
+    "PrescriptionLink": "Dear {0}, thank you for using DrOnA for your online consultation with Dr. {1}.Please use the following link to access your prescription(s): {2}  Call 91-8585855656 for any enquiry.",
+    "VedioUrl": "",
+    "InvoiceUrl": "",
+    "urlforshare": ""
+  },
+  "EncryptDecryptConfig": {
+    "EncryptionKey": "amitKey@supp@456$#"
+  },
+  "SMSContent": {
+
+    "InClinicBookingForPatient": "Dear {0}, your In-clinic appointment with {1} is scheduled for {2}, {3} at {4}. Call {5} for any enquiry.- DrOnA",
+    "InClinicBookingForDr": "Dear {0}, you have a In-clinic appointment with patient {1} Ph: {2}, on {3}, {4}.- DrOnA",
+    "VirtualBookingForPatient": "Dear {0}, your payment of {1} has been received and your VIDEO-consult with {2} is confirmed for {3}, {4}. Upload previous records.- DrOnA",
+    "VirtualBookingForDr": "Dear {0}, patient {1} Ph: {2}, has paid Rs. {3}, for VIDEO-consultation. The appointment is scheduled on {4}, {5}. - DrOnA",
+    "InClinicRescheduledForPatient": "Dear {0}, your In-clinic appointment with {1} is RE-SCHEDULED for {2}, {3} at {4}. Call {5} for any enquiry.",
+    "InClinicRescheduledForDr": "Dear {0}, you have a In-clinic appointment with patient {1} Ph: {2} is RE-SCHEDULED for {3}, {4}. at {5}- DrOnA",
+    "VirtualRescheduledForPatient": "Dear {0}, your VIDEO consultation appointment with {1} is RE-SCHEDULED for {2}, {3}.Please pay to confirm or Ignore if already paid.",
+    "VirtualRescheduledForDr": "Dear {0},you have VIDEO consultation appointment with patient {1} Ph: {2}, is RE-SCHEDULED on {3}, {4}. - DrOnA",
+    "CancelAppointmentForPatient": "Dear {0}, your appointment with {1} for date {2}, {3} is now cancelled. The amount (if any), shall be refunded in 5-7 working days.",
+    "CancelAppointmentForDr": "Dear {0}, you have an appointment with patient {1} Ph: {2} for date {3}, {4} is now cancelled.",
+    "PrescriptionLink": "Dear {0}, thank you for using DrOnA for your online consultation with Dr. {1}.Please use the following link to access your prescription(s): {2}  Call 91-8585855656 for any enquiry.",
+    "VedioUrl": "",
+    "Invoice": "Dear {0}, thank you for using DrOnA for your online consultation with Dr. {1}.Please use the following link to access your Invoice(s): {2}  Call 91-8585855656 for any enquiry.",
+    "urlforshare": "",
+    "ResendPaymentURL": "Dear {0}, Click on given url and make the payment. {1}.",
+
+    "VirtualPayment": "Dear {0}, your VIDEO-consultation appointment with {1} is tentatively scheduled for {2},{3}. Please pay at the earliest to confirm, so that the time slot is not claimed by another patient. Ignore if already paid {4} "
+  },
+  "EmailContent": {
+
+    "InClinicBookingForPatient": "Dear {0},<br><br> your In-clinic appointment with {1} is scheduled for {2}, {3} at {4}. Call {5} for any enquiry.- DrOnA",
+    "InClinicBookingForDr": "Dear {0},<br><br> you have a In-clinic appointment with patient {1} Ph: {2}, on {3}, {4}.- DrOnA",
+    "VirtualBookingForPatient": "Dear {0},<br><br> your payment of {1} has been received and your VIDEO-consult with {2} is confirmed for {3}, {4}. Upload previous records. - DrOnA",
+    "VirtualBookingForDr": "Dear {0},<br><br> patient {1} Ph: {2}, has paid Rs. {3}, for VIDEO-consultation. The appointment is scheduled on {4}, {5}.- DrOnA",
+    "InClinicRescheduledForPatient": "Dear {0},<br><br> your In-clinic appointment with {1} is RE-SCHEDULED for {2}, {3} at {4}. Call {5} for any enquiry.",
+    "InClinicRescheduledForDr": "Dear {0},<br><br> you have a In-clinic appointment with patient {1} Ph: {2} is RE-SCHEDULED for {3}, {4}. at {5}- DrOnA",
+    "VirtualRescheduledForPatient": "Dear {0},<br><br> your VIDEO consultation appointment with {1} is RE-SCHEDULED for {2}, {3}.Please pay to confirm or Ignore if already paid.",
+    "VirtualRescheduledForDr": "Dear {0},<br><br>you have VIDEO consultation appointment with patient {1} Ph: {2}, is RE-SCHEDULED on {3}, {4}. - DrOnA",
+    "CancelAppointmentForPatient": "Dear {0},<br><br> your appointment with {1} for date {2}, {3} is now cancelled. The amount (if any), shall be refunded in 5-7 working days.",
+    "CancelAppointmentForDr": "Dear {0},<br><br> you have an appointment with patient {1} Ph: {2} for date {3}, {4} is now cancelled.",
+    "PrescriptionLink": "Dear {0},<br><br> thank you for using DrOnA for your online consultation with Dr. {1}.<br><br>Please use the following link to access your prescription(s):<br><br>{2}<br><br>Call 91-8585855656 for any enquiry.",
+    "VedioUrl": "",
+    "Invoice": "Dear {0},<br><br> thank you for using DrOnA for your online consultation with Dr. {1}.<br><br>Please use the following link to access your Invoice(s):<br><br>{2}<br><br>Call 91-8585855656 for any enquiry.",
+    "urlforshare": "",
+    "ResendPaymentURL": "Dear {0},Click on given url and make the payment. {1}.",
+
+    "VirtualPaymentLink": "Dear {0}, your VIDEO-consultation appointment with {1} is tentatively scheduled for {2},{3}. Please pay at the earliest to confirm, so that the time slot is not claimed by another patient. Ignore if already paid {4} "
+  },
+  "PaymentBaseUrl": {
+    //---------------- Dev environment -----------------
+    "Baseurl": "http://104.211.137.89/DronaAngularAppMsiteDev/Payment/{0}"
+  },
+  "ShareBaseUrl": {
+    //---------------- Dev environment -----------------
+    "Baseurl": "http://104.211.137.89/DronaAngularAppMsiteDev/{0}/doctor/{1}"
+  },
+  "Haptik": {
+    "authType": "Basic",
+    "trackUserUrl": "https://api.interakt.ai/v1/public/track/users/",
+    "trackEventsUrl": "https://api.interakt.ai/v1/public/track/events/",
+    "SecretKey": "ZkVQTlpBcURvMGlRUzUyTlU0UlJLWk1jdFFiMkxIWVRtcUtJSXpWZUdwQTo="
+  },
+  "ShareClinicBaseUrl": {
+    //---------------- Dev environment -----------------
+    "Baseurl": "http://104.211.137.89/DronaAngularAppMsiteDev/{0}/clinic/{1}"
+  },
+  "Refund": {
+    "authType": "Basic",
+    "URL": "https://info.payu.in/merchant/postservice?form=2",
+    "MerchantKey": "F6PTjd",
+    //"Authorization": "uATeQjE2MZCa13Pc0D6A9V8OwvRW5wf/tSFsDxRfcPA=",
+    "command": "cancel_refund_transaction",
+    //"MerchantKey": "F6PTjd", // PayOne
+    "MerchantSalt": "yjeZPPp1COEQT344SqXhBkBz8llAlHyp" // PayOne
+  }
+}

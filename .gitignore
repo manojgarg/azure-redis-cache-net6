@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/UneecopsTechnologies.Cloud.DAL/bin
+/UneecopsTechnologies.Cloud.DAL/obj
+/UneecopsTechnologies.Cloud.API/bin
+/UneecopsTechnologies.Cloud.API/obj
+/UneecopsTechnologies.Cloud.BAL/bin
+/UneecopsTechnologies.Cloud.BAL/obj
+bin
+obj
+*.cache
+*.pdb
+*.zip
+*.props
+*.dll
+*.txt
+*.user
+*.pubxml
